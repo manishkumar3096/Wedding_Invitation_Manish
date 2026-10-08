@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G Manish Kumar & K Abinaya Durka - Wedding Invitation</title>
+    <title>G Manish Kumar &amp; K Abinaya Durka - Wedding Invitation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&family=Rozha+One&display=swap" rel="stylesheet">
     <style>
@@ -16,45 +16,79 @@
         .heading-font {
             font-family: 'Playfair Display', serif;
         }
-        /* Custom glassmorphism styling */
         .glass-card {
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(212, 175, 55, 0.3);
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
-<body class="relative min-h-screen text-neutral-800 overflow-x-hidden">
+<body class="relative min-h-screen text-neutral-800 bg-neutral-950 overflow-x-hidden">
 
-    <!-- Background Video Backdrop -->
-    <div class="fixed inset-0 w-full h-full overflow-hidden z-0 bg-neutral-900">
-        <video autoplay muted loop playsinline class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover opacity-60">
-            <!-- Replace 'MyInvitation-Video.mp4' with your hosted video link if uploading to GitHub -->
+    <!-- Background Video & Fallback Layer -->
+    <div class="fixed inset-0 w-full h-full overflow-hidden z-0 bg-gradient-to-br from-amber-950 via-neutral-900 to-amber-900">
+        <video autoplay muted loop playsinline class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover opacity-50">
             <source src="MyInvitation-Video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
         </video>
-        <!-- Gradient Overlay for readability -->
-        <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
+        <!-- Atmospheric Gradient Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
     </div>
 
-    <!-- Main Content Wrapper -->
-    <div class="relative z-10 max-w-2xl mx-auto px-4 py-12 flex flex-col items-center">
+    <!-- Main Container -->
+    <div class="relative z-10 max-w-xl mx-auto px-4 py-10 flex flex-col items-center">
 
-        <!-- Header / Greeting Card -->
-        <div class="glass-card rounded-2xl shadow-2xl p-6 md:p-10 w-full text-center mb-8 transform transition hover:scale-[1.01]">
-            <span class="text-xs tracking-widest uppercase text-amber-700 font-semibold mb-2 block">Save The Date</span>
+        <!-- Main Header / Couple Card -->
+        <div class="glass-card rounded-3xl p-6 md:p-8 w-full text-center mb-6">
+            <span class="text-xs tracking-widest uppercase text-amber-800 font-bold mb-1 block">Save The Date</span>
             
-            <!-- Hindi Text Section -->
-            <div class="hindi-font text-xl md:text-2xl text-amber-900 mb-4 leading-relaxed">
+            <div class="hindi-font text-2xl text-amber-900 mb-3">
                 शुभ विवाह आमंत्रण
             </div>
             
-            <p class="text-sm md:text-base text-neutral-700 italic mb-6 leading-relaxed">
+            <p class="text-xs md:text-sm text-neutral-700 italic mb-6 leading-relaxed">
                 "As we begin a new chapter filled with love, faith, and togetherness, we cordially invite you and your family to grace our wedding celebrations."
             </p>
 
-            <div class="border-t border-b border-amber-200/60 py-4 my-4">
-                <h1 class="heading-font text-3xl md:text-4xl font-bold text-amber-950 mb-1">G Manish Kumar <span class="text-amber-700 text-2xl font-normal">B.E</span></h1>
-                <p class="text-xs text-neutral-600 mb-3">(S/O Mrs. R Hemamalini)</p>
-                <div class="text-amber-600 font-serif text-xl my-1">&amp;</div>
-                <h1 class="heading-font text
+            <div class="border-t border-b border-amber-200 py-5 my-3">
+                <h1 class="heading-font text-2xl md:text-3xl font-bold text-amber-950">G Manish Kumar <span class="text-amber-700 text-lg font-normal">B.E</span></h1>
+                <p class="text-xs text-neutral-600 mt-0.5">(S/O Mrs. R Hemamalini)</p>
+                
+                <div class="text-amber-700 font-serif text-xl my-2">&amp;</div>
+                
+                <h1 class="heading-font text-2xl md:text-3xl font-bold text-amber-950">K Abinaya Durka <span class="text-amber-700 text-lg font-normal">MBBS, M.D</span></h1>
+                <p class="text-xs text-neutral-600 mt-0.5">(D/O Mr. K Kuppuraj &amp; Mrs. Shanthi)</p>
+            </div>
+        </div>
+
+        <!-- Events Schedule Card -->
+        <div class="glass-card rounded-3xl p-6 md:p-8 w-full mb-6">
+            <h2 class="heading-font text-xl font-bold text-center text-amber-950 mb-5 border-b pb-2 border-amber-200">Wedding Events</h2>
+
+            <div class="space-y-4">
+                <!-- Reception -->
+                <div class="bg-amber-50/90 rounded-2xl p-4 border border-amber-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-1">
+                        <h3 class="heading-font font-bold text-base text-amber-900">✨ Reception</h3>
+                        <span class="text-[10px] bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full font-semibold">Evening</span>
+                    </div>
+                    <p class="text-xs md:text-sm text-neutral-800 font-medium">📅 28th November 2026, Saturday</p>
+                    <p class="text-xs md:text-sm text-neutral-800 font-medium mt-0.5">⏰ 6:00 PM onwards</p>
+                </div>
+
+                <!-- Wedding / Muhurtham -->
+                <div class="bg-amber-50/90 rounded-2xl p-4 border border-amber-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-1">
+                        <h3 class="heading-font font-bold text-base text-amber-900">🌸 Wedding (Muhurtham)</h3>
+                        <span class="text-[10px] bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full font-semibold">Ceremony</span>
+                    </div>
+                    <p class="text-xs md:text-sm text-neutral-800 font-medium">📅 29th November 2026, Sunday</p>
+                    <p class="text-xs md:text-sm text-neutral-800 font-medium mt-0.5">⏰ 8:00 AM to 9:30 AM</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Venue Card -->
+        <div class="glass-card rounded-3xl p-6 md:p-8 w-full mb-6 text-center">
+            <h2 class="heading-font text-xl font-bold text-amber-950 mb-2">🏛️ Venue</h2>
+            <p class="font-bold text-base text-neutral-900">Pushpa Mahal A/C</p>
